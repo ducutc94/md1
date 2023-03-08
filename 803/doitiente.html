@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doi tien te</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><label for="amount">amount</label></td>
+        <td>from currency</td>
+        <td>to currency</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="amount"></td>
+        <td>
+            <select id="from">
+                <option value="vn">VN</option>
+                <option value="usd">usd</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="vn">vn</option>
+                <option value="usd">usd</option>
+            </select>
+
+        </td>
+        <td>
+            <button onclick="Tien()">convert</button>
+        </td>
+    </tr>
+</table>
+<p id="Tien"></p>
+
+
+</body>
+</html>
+<script src="tiendola.js"></script>
