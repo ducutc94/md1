@@ -3,7 +3,7 @@ function login() {
     let b = document.getElementById("password").value;
     if (b == "123") {
         if (a == "admin") {
-            document.getElementById("rd").innerHTML="TK admin ngu ngao ngo";
+            document.getElementById("rd").innerHTML="TK admin";
         } else if (a == "user") {
             document.getElementById("rd").innerHTML="TK user";
         }
