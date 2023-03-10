@@ -1,23 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
 </head>
 <body>
-<input type="text" id="nhapa">
-<button onclick="nhapdulieu()">nhap</button>
+<input type="number" id="canh1">
+<input type="number" id="canh2">
+<input type="number" id="canh3">
+<br>
+<button onclick="nhap()">Nhap</button>
 <p id="hienthi"></p>
-<p id="hienthi2"></p>
+
 
 </body>
-<script>
-    function nhapdulieu() {
-        let a = document.getElementById("nhapa").value;
-        let chuvi = a * 4;
-        let dientich = a * a;
-        document.getElementById("hienthi").innerHTML = "Chu vi la:" + chuvi;
-        document.getElementById("hienthi2").innerHTML = "dien tich la:" + dientich;
-    }
-</script>
+<script src="minitest.js"></script>
 </html>
