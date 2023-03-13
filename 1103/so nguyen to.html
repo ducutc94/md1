@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let number=+prompt("nhap so:")
+    // let cout=0;
+    // let N=2;
+    // for(cout;cout<number;cout++){
+    //     if()
+    // }
+    let y = true
+    let number = +prompt("nhap")
+    for (i = 2; i < number; i++) {
+        console.log(i)
+        if (number % i === 0) {
+            y = false
+            document.write("khong phai so nguyen to")
+            break;
+        }
+    }
+    if(y===true) {
+        document.write("la so nguyen to")
+    }
+
+</script>
+</body>
+</html>
