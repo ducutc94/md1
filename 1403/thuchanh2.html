@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="id">
+<button onclick="nhap()">Nhap</button>
+<input type="text" id="aa">
+<p id="hienthi"></p>
+
+</body>
+<script>
+  function nhap() {
+    let a=+document.getElementById("id").value;
+    document.getElementById("aa").value=document.getElementById("id").value;
+    document.getElementById("hienthi").innerHTML="thanhcong"
+  }
+</script>
+</html>
