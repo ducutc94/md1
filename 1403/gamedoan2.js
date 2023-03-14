@@ -1,6 +1,7 @@
 function doanso() {
     let sodau=+prompt("nhap khoang dau:");
-    let random=Math.floor(Math.random()*sodau);
+    let socuoi=prompt("nhap so cuoi:");
+    let random=Math.floor(Math.random()*(socuoi-sodau))+sodau;
     console.log(random);
     let number;
     let count=0;
