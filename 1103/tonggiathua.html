@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhap so:")
+    let i
+    let s = 7
+    let m = 1
+    let j
+    let tong = 0
+    for (i = 1; i <= n + 1; i++) {
+        m = 1
+        for (j = 1; j <= i; j++) {
+            m *= j
+        }
+        console.log(m)
+        tong += m
+    }
+    s += tong
+    console.log(s)
+    // }document.write(s)
+</script>
+</body>
+</html>
