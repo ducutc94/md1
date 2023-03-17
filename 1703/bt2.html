@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=+prompt('Nhap n:')
+    let arr=new Array(number);
+    let cout=0
+    let a=+prompt("phan tu a:")
+    for (let i=0;i<number;i++){
+        arr[i]=prompt(" nhap phan tu"+i)
+        if(a===arr[i]){
+            cout++;
+        }
+    }console.log(cout);
+</script>
+</body>
+</html>
