@@ -18,23 +18,26 @@
     // }
     // console.log(cout);
     function array(number) {
-        let arr=new Array(number);
-        let arr2=[]
+        let arr = new Array(number);
+        let arr2 = []
         for (let i = 0; i < number; i++) {
-            arr[i]= +prompt("nhap mang thu"+i);
+            arr[i] = +prompt("nhap mang thu" + i);
             arr2.push(arr[i]);
-        }return arr2;
+        }
+        return arr2;
     }
 
-    function dem(a, arr3){
-        let count=0;
-        for (let i=0;i<arr3.length;i++){
-            if(arr3[i]===a){
+    function dem(a, arr3) {
+        let count = 0;
+        for (let i = 0; i < arr3.length; i++) {
+            if (arr3[i] === a) {
                 count++;
             }
-        }return count;
+        }
+        return count;
     }
-    console.log(dem(2,array(5)))
+
+    console.log(dem(2, array(5)))
 </script>
 </body>
 </html>
