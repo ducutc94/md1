@@ -5,16 +5,46 @@
     <title>Title</title>
 </head>
 <body>
+<p id="hienthi"></p>
 <script>
-  let number=+prompt('Nhap n:')
-  let arr=new Array(number);
-  let arr2=[];
-  for (let i=0;i<number;i++){
-    arr[i]=prompt(" nhap phan tu"+i)
-    if(arr[i]%2===0){
-      arr2.push(arr[i]);
+    // let number = +prompt('Nhap n:')
+    // let arr = new Array(number);
+    // let arr2 = [];
+    // for (let i = 0; i < number; i++) {
+    //     arr[i] = +prompt(" nhap phan tu" + i)
+    //     if (arr[i] % 2 === 0) {
+    //         arr2.push(arr[i]);
+    //     }
+    // }
+    // console.log(arr2);
+    // document.getElementById("hienthi").innerHTML="["+arr2+
+    let arr = [2, 4, 6, 8, 1, 2, 3, 4, 5];
+
+    function arraybt1(array) {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] % 2 === 0) {
+                count++;
+            }
+
+        }
+        return count;
     }
-  }console.log(arr2);
+
+    console.log(arraybt1(arr));
+
+    function array1(number) {
+        let arr = new Array(number);
+        let arr2 = [];
+        for (let i = 0; i < number; i++) {
+            arr[i] = +prompt(" nhap phan tu" + i)
+            if (arr[i] % 2 === 0) {
+                arr2.push(arr[i]);
+            }
+
+        }return arr2;
+    }
+    console.log(arraybt1(array1(5)));
 </script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6];
+    let arr1 = [3, 4, 1, 2, 3];
+    let arr2 = []
+    let arr3 = [0, 0, 0, 0, 0, 0, 0];
+    let arr4 = [4, 5, 64, 2, 43, 10];
+
+    function minOfArray(array) {
+        let min = array[0];
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+
+        }
+        return min;
+    }
+
+    minOfArray(arr3);
+    console.log(minOfArray(arr3));
+
+</script>
+</html>
