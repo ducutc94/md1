@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Add New Product</h1>
+<input type="text" id="nhap" placeholder="New Product">
+<button onclick="add()">Add</button>
+<br>
+<h1>Display In product</h1>
+<h3>Product Name</h3>
+<p id="display"></p>
+<table id="table">
+
+</table>
+</body>
+<script>
+    let array = [
+        "Sony",
+        "Samsung",
+        "Iphone",
+        "HTC",
+        "LG",
+    ];
+    let c = "";
+    quali(array)
+
+    function quali(array) {
+        c="";
+        for (let i = 0; i < array.length; i++) {
+            c += "<tr>\n" +
+                "<td>" + array[i] + "</td>\n" +
+                "<td><button onclick=\"edi("+i+")\">Edit</button></td>\n" +
+                "<td><button onclick=\"dele("+i+")\">Delete</button></td>\n" +
+                "</tr>"
+        }
+        document.getElementById("table").innerHTML = c;
+
+
+    }
+
+    function add() {
+        let them = document.getElementById("nhap").value;
+        array.push(them);
+        quali(array)
+    }
+
+    function edi(oldName, newName) {
+        let index = array.indexOf(oldName);
+        console.log(index)
+        newName = prompt("Nhap ten moi");
+        array[index] = newName;
+        quali(array)
+
+
+    }
+
+    function dele(index) {
+        console.log(index)
+        array.slice(index-1,1);
+        quali(array);
+
+
+
+    }
+
+
+</script>
+</html>

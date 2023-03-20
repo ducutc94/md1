@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<button onclick="addPro()">ADD</button>
+</body>
+<script>
+    let ip3 = ["iphon3", 300, "USA"];
+    let ip4 = ["iphon3", 400, "USA"];
+    let ip5 = ["iphon3", 500, "USA"];
+    let samsung = ["samsung", 300, "USA"];
+    let samsungs2 = ["samsungs2", 800, "USA"];
+    let product = [ip3, ip4, ip5, samsung, samsungs2];
+    display();
+
+    function display() {
+        let str = "<table>";
+        for (let i = 0; i < product.length; i++) {
+            str += "<tr>";
+            for (let j = 0; j < product[i].length; j++) {
+                str += "<td>" + product[i][j] + "</td>";
+            }
+            str += "<td><button onclick='editProd(" + i + ")'>Edit</button></td>" + "<td><button onclick='deleteProd(" + i + ")'>DELETE</button></td>" + "</tr>";
+        }
+        str += "</table>";
+        document.getElementById("show").innerHTML = str;
+    }
+
+    function inptPro() {
+        let name = prompt("Nhap ten sp:");
+        let price = prompt("Nhap gia sp:");
+        let from = prompt("Nhap xuat su sp:");
+        let newProd = [name, price, from];
+        return newProd;
+    }
+
+    function addPro() {
+        let newProd = inptPro();
+        product.push(newProd);
+        display();
+    }
+
+    function editProd(index) {
+        let newProd = inptPro();
+        product.splice(index, 1, newProd);
+        display()
+
+    }
+
+    function deleteProd(index) {
+        let c = confirm("Ban co thuc su muon xoa ?")
+        if (c === true) {
+            product.splice(index, 1);
+            display();
+        }
+
+
+    }
+
+
+</script>
+</html>
