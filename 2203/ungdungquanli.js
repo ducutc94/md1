@@ -24,7 +24,7 @@ class Students {
 }
 
 let studen1 = new Students('Nam', 18, 'HN')
-let studen2 = new Students('Tung', 19, 'Hp')
+let studen2 = new Students('Tung', 19, 'HP')
 let studen3 = new Students('Nguyen', 17, 'TN')
 let studen4 = new Students('Tien Bry', 16, 'VN')
 let studen5 = new Students('Huan Rose', 18, 'HCM')
@@ -35,18 +35,22 @@ let flag1 = true;
 function show() {
     let str = "<table id='table' >"
     str += "<tr>";
-    str += "<th colspan='2'> Product Name </th>"
-    str += "<th colspan='2'> Action </th>"
-    str += "<th>" + arr.length + " Produc </th>"
+    str += "<th > STT </th>"
+    str += "<th > Ten </th>"
+    str += "<th > Tuoi </th>"
+    str += "<th > Que quan </th>"
+    // str += "<th colspan='4'> Product Name </th>"
+    str += "<th colspan='4' style='text-align: center'> Action </th>"
+    str += "<th style='color: red'>" + arr.length + " Product </th>"
     str += "</tr>"
     for (let i = 0; i < arr.length; i++) {
         str += "<tr>";
-        str += "<td>" + (i + 1) + "</td>";
-        str += "<td>" + arr[i].getName() + "</td>";
-        str += "<td>" + arr[i].getAge() + "</td>";
-        str += "<td>" + arr[i].getFrom() + "</td>";
-        str += "<td><button onclick='edit(" + i + ")'>Edit</button></td>";
-        str += "<td><button onclick='delet(" + i + ")'>Delete</button></td>";
+        str += "<td >" + (i + 1) + "</td>";
+        str += "<td style='text-align: left'>" + arr[i].getName() + "</td>";
+        str += "<td >" + arr[i].getAge() + "</td>";
+        str += "<td colspan='2'>" + arr[i].getFrom() + "</td>";
+        str += "<td><button onclick='edit(" + i + ")' >Edit</button></td>";
+        str += "<td><button onclick='delet(" + i + ")'style='font-size: small'>Delete</button></td>";
         str += "<tr>";
     }
     str += "</table>";
