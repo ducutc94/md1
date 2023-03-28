@@ -27,9 +27,9 @@ function display(onpiece) {
             str += "<td>" + onpiece[i].name + "</td>";
             str += "<td>" + onpiece[i].age + "</td>";
             str += "<td>" + onpiece[i].from + "</td>";
-            str += "<td colspan='3' class='zoom'><img src='" + onpiece[i].devil + "' height=100 width=100 /></td>";
+            str += "<td colspan='3' class='zoom1'><img src='" + onpiece[i].devil + "' height=100 width=100 /></td>";
             str += "<td colspan='2'>" + onpiece[i].position + "</td>";
-            str += "<td class='zoom'> <img src=' " + onpiece[i].image + "' height=100 width=100 /> </td>";
+            str += "<td class='zoom1'> <img src=' " + onpiece[i].image + "' height=100 width=100 /> </td>";
             str += "<td>" + onpiece[i].bonus + "</td>";
             str += "<td><button onclick='edit(" + i + ")'>SỬA</button></td>";
             str += "<td><button onclick='dele(" + i + ")'>XÓA</button></td>";
