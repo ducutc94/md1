@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="casestudy.css">
+</head>
+<body onload="display(onpiece)">
+<div id="wapper">
+    <ul class="list-person">
+        <li><a href="">
+            <img
+                    src="https://photo2.tinhte.vn/data/attachment-files/2021/02/5330802_Vua-Hai-Tac-Luffy-dao-Hai-Tac-1.png"
+                    alt="">
+        </a>
+        </li>
+        <li><a href="">
+            <img src="https://ecdn.game4v.com/g4v-content/uploads/2015/02/VHT2.jpg" alt="">
+        </a>
+        </li>
+    </ul>
+</div>
+<div class="h2">
+    <h2>Quản Lí Thuyền Viên</h2>
+    <hr>
+</div>
+<div class="input">
+    <input type="text" id="search" placeholder="VD: Luffy">
+    <button onclick="search()">Tìm Kiếm</button>
+    <button onclick="login()">Đăng nhập</button>
+    <button onclick="exit()">Đăng Xuất</button>
+    <button onclick="resfesh()">Resfesh</button>
+</div>
+<div>
+    <br>
+</div>
+<p id="showsearch"></p>
+<div class="table" id="bang2" style="display: none">
+    <table>
+        <tr>
+            <th colspan="2" id="th">Thông tin thành viên</th>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td><input type="text" id="id"></td>
+        </tr>
+        <tr>
+            <td>Tên</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>Tuổi</td>
+            <td><input type="text" id="age"></td>
+        </tr>
+        <tr>
+            <td>Từ</td>
+            <td><input type="text" id="from"></td>
+
+        </tr>
+        <tr>
+            <td>Sức Mạnh</td>
+            <td><input type="text" id="fruit"></td>
+        </tr>
+        <tr>
+            <td>Chức vụ</td>
+            <td><input type="text" id="position"></td>
+        </tr>
+        <tr>
+            <td>Wanted</td>
+            <td><input type="text" id="gold"></td>
+        <tr>
+        <tr>
+            <td>Tiền thưởng</td>
+            <td><input type="text" id="bonus"></td>
+        </tr>
+        <td></td>
+        <td>
+            <button onclick="add()"> THÊM</button>
+            <button onclick="save()">LƯU</button>
+        </td>
+
+        </tr>
+    </table>
+</div>
+<div>
+    <p id="show"></p>
+</div>
+</body>
+<script src="casestudy.js"></script>
+<script src="people.js"></script>
+<script src="taoform.js"></script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    html{
+        text-align: center; !important;
+        font-size: 100%;
+        font-family: "Open Sans", sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+    span {
+        text-align: center;
+        color: black;
+        padding-bottom: 100px;
+    }
+    button:hover{
+        background-color: darkorange;
+    }
+    button{
+        border: none;
+        border-radius: 8px;
+        background-color: #1dbfaf;
+        margin-top: 12px;
+        padding: 12px 16px;
+        height: 40px;
+        width: 150px;
+    }
+    .css{
+        width: 360px;
+        min-height: 100px;
+        padding: 32px 24px;
+        background: #fff;
+        border-radius: 2px;
+        margin: 24px;
+        align-self: center;
+        box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 1);
+    }
+</style>
+
+</head>
+<body>
+<div class="css">
+<label for="dangnhap"><span>Ten Dang Nhap:</span></label> <br>
+<input type="text" id="dangnhap" placeholder="Nhap ten"><br>
+<label for="password"><span>Mat Khau:</span></label> <br>
+<input type="password" id="password" placeholder="Nhap mat khau"><br><br>
+<button onclick="test()">Dang Nhap</button>
+<br>
+<!--<button  class="asd" onclick="dangki1()" style="font-size: small">Dang Ki</button>-->
+</div>
+</body>
+<script src="Account.js"></script>
+<script src="taoform.js"></script>
+</html>

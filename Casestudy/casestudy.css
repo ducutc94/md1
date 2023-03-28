@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}a{
+    text-decoration: none;
+ }
+ #wapper{
+     display: flex;
+     justify-content: center;
+     padding-bottom: 50px;
+
+ }
+ .list-person{
+     display: flex;
+ }ul.list-person li{
+    max-width: 800px;
+    overflow: hidden;
+   }
+  ul.list-person li a img{
+      display: block;
+      max-width: 100%;
+      transition: all 0.5s ease-in-out;
+  }
+ul.list-person li :hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+      }
+
+td.zoom :hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+      }
+    h2{
+        display: flex;
+        justify-content: center;
+    }#show{
+             display: flex;
+             justify-content: center;
+    margin-top: -450px;
+    margin-left: 850px;
+         }
+     #showsearch{
+         justify-content: center;
+
+     }
+     .input{
+         justify-content: center;
+         margin-left: 50px;
+         font-size: 30px;
+     }
+input {
+    height: 30px;
+    width: 250px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+button {
+    height: 30px;
+    width: 80px;
+    border-radius: 4px;
+    border: none;
+    background-color: #1994ff;
+    color: white;
+    font-size: 15px;
+}table tr th{
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+ table{
+     text-align: center;
+ }
+ button:hover{
+     background-color: #f33a58;
+ }
+ #danhSach{
+     border: 1px solid;
+ }
+ h2{
+     color: whitesmoke;
+     background-color: cornflowerblue;
+ }
+ .table{
+     margin-left: 50px;
+ } th{
+    color: #f33a58;
+   }
+   #th{
+       background-color: #1dbfaf;
+       color: whitesmoke;
+   }
