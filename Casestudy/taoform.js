@@ -5,8 +5,9 @@ let people3 = new Account("nami", "123456789")
 let people4 = new Account("brook", "123456999")
 let people5 = new Account("jinbei", "12345643")
 let account = [people, people1, people2, people3, people4, people5]
-window.localStorage.setItem("dangnhap",JSON.stringify(account))
- account=JSON.parse(localStorage.getItem("dangnhap"));
+window.localStorage.setItem("dangnhap", JSON.stringify(account))
+account = JSON.parse(localStorage.getItem("dangnhap"));
+
 function test() {
     let tendangnhap = document.getElementById("dangnhap").value;
     let password = document.getElementById("password").value;
@@ -22,6 +23,7 @@ function test() {
         dangnhap();
     }
 }
+
 function dangnhap() {
     localStorage.getItem("ok")
     let tendangnhap = document.getElementById("dangnhap").value;

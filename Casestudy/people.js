@@ -1,4 +1,3 @@
-
 // window.localStorage.setItem("products" , JSON.stringify(onpiece))
 let onpiece = JSON.parse(window.localStorage.getItem("products"))
 let show = localStorage.getItem("ok");
@@ -9,7 +8,7 @@ function display(onpiece) {
     if (show === "true") {
         showdiv()
         let str = "<table id='danhSach'>";
-        str += "<tr>";
+        str += "<tr id='tr1'>";
         str += "<th>ID</th>"
         str += "<th>Tên</th>"
         str += "<th>Tuổi</th>"
@@ -108,9 +107,8 @@ function save() {
     let bonus = document.getElementById("bonus").value;
     onpiece[demo] = new Onepiece(id, name, age, from, fruit, position, image, bonus);
     window.localStorage.setItem("products", JSON.stringify(onpiece))
-    alert("Bạn đã cập nhật thành công:")
     display(onpiece);
-
+    alert("Bạn đã cập nhật thành công:")
 }
 
 function login() {
@@ -130,5 +128,17 @@ function showdiv() {
 
 function resfesh() {
     window.location.href = "casestudy.html";
+}
+
+function clearAll() {
+    document.getElementById("id").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("from").value = "";
+    document.getElementById("fruit").value = "";
+    document.getElementById("position").value = "";
+    document.getElementById("gold").value = "";
+    document.getElementById("bonus").value = "";
+
 }
 

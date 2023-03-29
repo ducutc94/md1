@@ -31,12 +31,12 @@
     <button onclick="exit()">Đăng Xuất</button>
     <button onclick="resfesh()">Resfesh</button>
 </div>
-    <br>
+<br>
 <p id="showsearch"></p>
 <div class="table" id="bang2" style="display: none">
     <table>
         <tr>
-            <th colspan="2" id="th">Thông tin thành viên</th>
+            <th colspan="2" id="th"></th>
         </tr>
         <tr>
             <td>ID</td>
@@ -72,10 +72,14 @@
             <td><input type="text" id="bonus"></td>
         </tr>
         <td></td>
-        <td>
-            <button onclick="add()"> THÊM</button>
-            <button onclick="save()">LƯU</button>
-        </td>
+        <div class="button2">
+            <td>
+                <button onclick="add()"> THÊM</button>
+                <button onclick="save()">LƯU</button>
+                <button onclick="clearAll()">Clear All</button>
+
+            </td>
+        </div>
 
         </tr>
     </table>

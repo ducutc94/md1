@@ -1,61 +1,77 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-ul{
-    list-style: none;
-}a{
-    text-decoration: none;
- }
- #wapper{
-     display: flex;
-     justify-content: center;
-     padding-bottom: 50px;
 
- }
- .list-person{
-     display: flex;
- }ul.list-person li{
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+
+.list-person {
+    display: flex;
+}
+
+ul.list-person li {
     max-width: 800px;
     overflow: hidden;
-   }
-  ul.list-person li a img{
-      display: block;
-      max-width: 100%;
-      transition: all 0.5s ease-in-out;
-  }
-ul.list-person li :hover img{
+}
+
+ul.list-person li a img {
+    display: block;
+    max-width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+ul.list-person li :hover img {
     transform: scale(1.2);
     opacity: 0.7;
-      }
-.zoom1:hover img{
+}
+
+.zoom1:hover img {
     transform: scale(3);
     opacity: 1;
     transition: 0.5s ease-in-out;
     filter: brightness(120%);
 
 }
-    h2{
-        display: flex;
-        justify-content: center;
-    }#show{
-             display: flex;
-             justify-content: center;
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#show {
+    display: flex;
+    justify-content: center;
     margin-top: -450px;
     margin-left: 850px;
-         }
-     .input{
-         justify-content: center;
-         margin-left: 50px;
-         font-size: 30px;
-     }
+}
+
+.input {
+    justify-content: center;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
 input {
     height: 40px;
     width: 250px;
     border-radius: 10px;
     font-size: 15px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 1)
 }
+
 button {
     height: 40px;
     width: 90px;
@@ -64,29 +80,72 @@ button {
     background-color: #1994ff;
     color: white;
     font-size: 15px;
-}table tr th{
+}
+
+table tr th {
     padding-top: 50px;
     padding-bottom: 50px;
- }
- table{
-     text-align: center;
- }
- button:hover{
-     background-color: #f33a58;
- }
- #danhSach{
-     border: 1px solid;
- }
- h2{
-     color: whitesmoke;
-     background-color: cornflowerblue;
- }
- .table{
-     margin-left: 50px;
- } th{
+}
+
+table {
+    text-align: center;
+}
+
+button:hover {
+    background-color: #f33a58;
+}
+
+#danhSach {
+    border: 1px solid;
+}
+
+h2 {
+    color: whitesmoke;
+    background-color: cornflowerblue;
+}
+
+.table td {
+    text-align: left;
+}
+
+.table {
+    margin-left: 50px;
+}
+
+th {
     color: #f33a58;
-   }
-   #th{
-       background-color: #1dbfaf;
-       color: whitesmoke;
-   }
+}
+
+#th {
+    background-image: url("https://i-amp.ex-cdn.com/mgn.vn/files/news/2022/12/29/one-piece-bieu-tuong-cac-bang-hai-tac-khong-phai-cung-biet-195453.jpg");
+    background-size: cover;
+    color: #1dbfaf;
+}
+
+#danhSach {
+    margin-top: -65px;
+    background-image: url("https://wallpaper.dog/large/298999.jpg");
+    background-size: auto;
+    color: black;
+    font-style: initial;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+#danhSach button {
+    opacity: 0.8;
+    background: none;
+    font-weight: bold;
+    color: black;
+}
+
+.table td input {
+    font-weight: bold;
+    font-size: 15px;
+    width: 280px;
+}
+
+.button2 td button {
+    margin-top: 20px;
+}
